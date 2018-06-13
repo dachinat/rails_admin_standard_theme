@@ -1,0 +1,103 @@
+/*
+  Customize RailsAdmin theme here.
+
+  Look at the markup in RailsAdmin and go there to get inspiration from:
+
+  http://getbootstrap.com
+
+  Test me: (actual color should be the one defined in variables.scss if you did)
+
+  body { background-color: $link-color; }
+*/
+
+body {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  background: #fff;
+  color: $navbar-inverse-link-disabled-color;
+}
+
+/* temp */
+body.rails_admin .form-horizontal textarea {
+  width: 100%;
+}
+
+/* navbar */
+.navbar-default {
+  background: #c52f24;
+  background-image: image-url("rails_admin/themes/standard_theme/header_tile.gif");
+  background-repeat: repeat-x;
+  border: 0;
+}
+/* navbar left part */
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active {
+  font-size: 30px;
+  line-height: 42px;
+  color: #fff;
+}
+.navbar-brand small {
+  color: #ef938e;
+}
+/* navbar links */
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:visited {
+  line-height:50px;
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active
+{
+  color: #fff;
+  text-decoration: underline;
+}
+/* logout button */
+#secondary-navigation .label-danger {
+  padding: 0.5em 1.5em;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  background: #980905;
+  color: #fff;
+}
+
+/* header */
+.content .page-header {
+  background: #d6e9f5;
+  margin-top: -20px;
+  margin-right: -15px;
+  margin-left: -251px;
+  padding-top: 1px;
+  font-weight: 1000;
+  margin-top:2px;
+  z-index:8;
+}
+.content .page-header h1 {
+  font-size: 2.1428em;
+  line-height: 1em;
+  margin: 0.7em 0 .2333em;
+  font-weight: bold;
+  color: #333;
+}
+
+.content {
+  font-size:15px;
+}
+/* container after nav */
+.container-fluid > .row {
+  background-image: image-url("rails_admin/themes/standard_theme/feature_tile.gif"); background-repeat: repeat-x;
+  background-position-y:0px;
+}
+
+/* dropdown header (left nav) */
+body.rails_admin .sidebar-nav { background-color: transparent !important;margin-top:2px;z-index:9}
+body.rails_admin .sidebar-nav ul { background: #fff !important; margin:10px;argin-left:0px;margin-right:0px;
+  text-align:left;}
+li.dropdown-header {font-size:23px;color:#333 !important;text-transform:unset !important;}
+.sidebar-nav a, .sidebar-nav a:visited { background: none; color: #980905; }
+.sidebar-nav li.active a, .sidebar-nav li.active a:hover, .sidebar-nav li.active a:active,
+.sidebar-nav li.active a:focus { background: none;
+  color: #980905; text-decoration:underline; font-weight:bold; }
+.sidebar-nav li a:hover, .sidebar-nav li a:focus, .sidebar-nav li a:active { background: none;
+  color: #980905; font-weight:bold; text-decoration: underline }
